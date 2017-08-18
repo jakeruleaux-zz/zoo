@@ -9,7 +9,7 @@ import { Animal } from './animal.model';
 export class AppComponent {
   title = 'Zoo!';
 
-  // selectedAnimal = null;
+  selectedAnimal = null;
 
   masterAnimalList: Animal[] = [
     new Animal('Tiger', 'Bob', 3, 'People', 'Woods', 9, 'Male', 'Food', 'You', 'Long story', '07/12/2012'),
@@ -18,13 +18,13 @@ export class AppComponent {
 
   ];
 
- //  editAnimal(clickedAnimal){
- //   this.selectedAnimal = clickedAnimal;
- // }
+  editAnimal(clickedAnimal){
+   this.selectedAnimal = clickedAnimal;
+ }
 
- // finishedEditing(){
- //   this.selectedAnimal = null;
- // }
+ finishedEditing(){
+   this.selectedAnimal = null;
+ }
 
  addAnimal(newAnimalFromChild: Animal) {
    this.masterAnimalList.push(newAnimalFromChild);

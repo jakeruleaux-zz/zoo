@@ -6,6 +6,7 @@
   <ul *ngFor="let currentAnimal of childAnimaList">
     <li></li>
   </ul>
-  <animal-list [childAnimalList]="masterAnimalList"></animal-list>
+  <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editKeg($event)" ></animal-list>
   <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
+   <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
 </div>
