@@ -10,12 +10,12 @@
 </select>
 <br><br>
 
-  <!-- <ul class="list-unstyled" *ngFor="let currentAnimal of childAnimalList | animalAge:filterByAnimalAge"> -->
-      <!-- <li> -->
-        <!-- <div class="well" [id]="animalSpices(currentAnimal)"> -->
-        <!-- <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button> -->
-        <!-- </div> -->
-      <!-- </li>
-    </div>
-  </ul> -->
+  <ul class="list-unstyled" *ngFor="let currentAnimal of childAnimalList">
+       <li>
+        <div class="well">
+        <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
+        </div>
+      </li>
+
+  </ul>
 </div>

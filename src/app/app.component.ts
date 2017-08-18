@@ -9,6 +9,8 @@ import { Animal } from './animal.model';
 export class AppComponent {
   title = 'Zoo!';
 
+  // selectedAnimal = null;
+
   masterAnimalList: Animal[] = [
     new Animal('Tiger', 'Bob', 3, 'People', 'Woods', 9, 'Male', 'Food', 'You', 'Long story', '07/12/2012'),
     new Animal('Whale', 'Moby', 24, 'Sailors', 'Toilet', 1, 'Male', 'Swimming', 'Land', 'Theres a book about this', '08/03/1864'),
