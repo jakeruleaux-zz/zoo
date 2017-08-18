@@ -13,15 +13,15 @@ This app will allow user to enter new animals added to the zoo inventory, includ
 
 2. Specs
 
-  Spec 1:
-  * Input: User may enter "new animal" with details of species, name, age, diet, location, sex, likes/dislikes, number of caretakers.
-  * Output: The animal data entered will be displayed.
+    Spec 1:
+    * Input: User may enter "new animal" with details of species, name, age, diet, location, sex, likes/dislikes, number of caretakers.
+    * Output: The animal data   entered will be displayed.
 
-  Spec 2:
-  * User will be able to sort Animal Inventory by age viewing only animals in the age range selected.
+    Spec 2:
+    * User will be able to sort Animal Inventory by age viewing only animals in the age range selected.
 
-  Spec 3:
-  * User will be able to click on individual animal and edit the details of the animal. Edited details will be displayed.
+    Spec 3:
+    * User will be able to click on individual animal and edit the details of the animal. Edited details will be displayed.
 
 3. Integration
 
@@ -72,3 +72,13 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Contact
+
+Contact the author at jakeruleaux@hotmail.com.
+
+## License
+
+MIT
+
+### Copyright 2017 Jacob Ruleaux
