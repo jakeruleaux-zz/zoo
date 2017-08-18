@@ -1,18 +1,16 @@
 <div class="container">
-  <p>
-    animal-list works!
-  </p>
   <h1>Current Animal List:</h1>
 <select (change)="onChange($event.target.value)">
   <option value="allAnimals" selected="selected">All Animals</option>
-  <option value="old">Older Animal</option>
-  <option value="young">Younger Animal</option>
+  <option value="old">Older Animals</option>
+  <option value="young">Younger Animals</option>
 </select>
 <br><br>
 
    <ul>
-       <li *ngFor="let currentAnimal of childAnimalList">
-         {{currentAnimal.species}}: {{currentAnimal.name}}: {{currentAnimal.age}}: {{currentAnimal.diet}}: {{currentAnimal.location}}: {{currentAnimal.caretakers}}: {{currentAnimal.sex}}: {{currentAnimal.likes}}: {{currentAnimal.dislikes}}: {{currentAnimal.bio}}: {{currentAnimal.admitted}}
+       <li *ngFor="let currentAnimal of childAnimalList | animalAge:filterByAge">
+
+         {{currentAnimal.species}}: {{currentAnimal.name}}: {{currentAnimal.animalAge}}: {{currentAnimal.diet}}: {{currentAnimal.location}}: {{currentAnimal.caretakers}}: {{currentAnimal.sex}}: {{currentAnimal.likes}}: {{currentAnimal.dislikes}}: {{currentAnimal.bio}}: {{currentAnimal.admitted}}
         <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
 
       </li>

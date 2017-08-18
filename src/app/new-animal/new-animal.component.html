@@ -1,7 +1,4 @@
 <div class="container">
-  <p>
-    new-animal works!
-  </p>
   <button id="done" (click)="showAddForm()">Add new Animal</button>
   <div *ngIf="addAnimal===true">
   <h1>New Animal:</h1>
@@ -10,7 +7,7 @@
   <label>Name:</label>
   <input #newName><br>
   <label>Age:</label>
-  <input type="number" #newAge><br>
+  <input type="number" #newAnimalAge><br>
   <label>Diet:</label>
   <input #newDiet><br>
   <label>Location:</label>
@@ -28,6 +25,6 @@
   <label>Admitted:</label>
   <input #newAdmitted><br>
   <br><br>
-  <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value, newBio.value, newAdmitted.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value=''; newBio.value=''; newAdmitted.value='';">Add New Animal</button>
+  <button (click)="submitForm(newSpecies.value, newName.value, newAnimalAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value, newBio.value, newAdmitted.value); newSpecies.value=''; newName.value=''; newAnimalAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value=''; newBio.value=''; newAdmitted.value='';">Add New Animal</button>
 </div>
 </div>

@@ -1,21 +1,30 @@
 <div class="container">
-  <p>
-    edit-animal works!
-  </p>
   <div *ngIf="childSelectedAnimal">
     <h1>Edit Animal details:</h1>
     <label>Edit</label><br>
+    <label>Species: </label>
     <input [(ngModel)]=childSelectedAnimal.species><br>
+    <label>Name: </label>
     <input [(ngModel)]=childSelectedAnimal.name><br>
-    <input [(ngModel)]=childSelectedAnimal.age><br>
+    <label>Age: </label>
+    <input [(ngModel)]=childSelectedAnimal.animalAgeage><br>
+    <label>Diet: </label>
     <input [(ngModel)]=childSelectedAnimal.diet><br>
+    <label> Location: </label>
     <input [(ngModel)]=childSelectedAnimal.location><br>
+    <label>Caretakers: </label>
     <input [(ngModel)]=childSelectedAnimal.caretakers><br>
+    <label>Sex: </label>
     <input [(ngModel)]=childSelectedAnimal.sex><br>
+    <label>Likes :</label>
     <input [(ngModel)]=childSelectedAnimal.likes><br>
+    <label>Dislikes: </label>
     <input [(ngModel)]=childSelectedAnimal.dislikes><br>
+    <label>Bio: </label>
     <input [(ngModel)]=childSelectedAnimal.bio><br>
+    <label>Admitted: </label>
     <input [(ngModel)]=childSelectedAnimal.admitted><br>
+    <br><br>
     <button (click)="doneButtonClicked()">Finished Editing</button>
   </div>
 </div>

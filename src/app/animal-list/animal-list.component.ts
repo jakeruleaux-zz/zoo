@@ -10,21 +10,16 @@ import { Animal } from './../animal.model';
 export class AnimalListComponent implements OnInit {
   @Input() childAnimalList: Animal[];
   @Output() clickSender = new EventEmitter();
-  // @Output() clickPour = new EventEmitter();
-  filterByAnimalAge: string = "allAnimals";
+  filterByAge: string = "allAnimals";
 
   editButtonHasBeenClicked(animalToEdit: Animal) {
     this.clickSender.emit(animalToEdit);
   }
 
   onChange(optionFromMenu) {
-   this.filterByAnimalAge = optionFromMenu;
+   this.filterByAge = optionFromMenu;
+   console.log(this.filterByAge);
  }
-
- // toggleDone(clickedKeg: Animal, setAlcohol: number) {
- //   clickedKeg.alcoholContent = setAlcohol;
- // }
-
   constructor() { }
 
   ngOnInit() {

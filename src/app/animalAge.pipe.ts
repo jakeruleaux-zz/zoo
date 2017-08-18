@@ -9,18 +9,18 @@ import { Animal } from './animal.model'
 
 export class AnimalAgePipe implements PipeTransform {
 
-  transform(input: Animal[], animalAge) {
+  transform(input: Animal[], creatureAge) {
     var output: Animal[] = [];
-    if (animalAge === "young") {
+    if (creatureAge === "young") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].age <= 2) {
+        if (input[i].animalAge <= 2) {
           output.push(input[i]);
         }
       }
       return output;
-    } else if (animalAge === "old") {
+    } else if (creatureAge === "old") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].age >= 2) {
+        if (input[i].animalAge >= 2) {
           output.push(input[i]);
         }
       }
