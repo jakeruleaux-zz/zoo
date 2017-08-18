@@ -1,26 +1,25 @@
 <div class="container">
   <h1>Current Animal List:</h1>
-<select (change)="onChange($event.target.value)">
-  <option value="allAnimals" selected="selected">All Animals</option>
-  <option value="old">Older Animals</option>
-  <option value="young">Younger Animals</option>
-</select>
-<br><br>
-
-   <ul>
-       <li *ngFor="let currentAnimal of childAnimalList | animalAge:filterByAge">
-
-         {{currentAnimal.species}}: {{currentAnimal.name}}: {{currentAnimal.animalAge}}: {{currentAnimal.diet}}: {{currentAnimal.location}}: {{currentAnimal.caretakers}}: {{currentAnimal.sex}}: {{currentAnimal.likes}}: {{currentAnimal.dislikes}}: {{currentAnimal.bio}}: {{currentAnimal.admitted}}
-        <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
-
-      </li>
-
-  </ul>
-
-  <ul class="cb-slideshow">
-  	<li><img src="../assets/img/tiger.jpg">...</li>
-  	<li>...</li>
-    <li>...</li>
-  	<li>...</li>
+  <select (change)="onChange($event.target.value)">
+    <option value="allAnimals" selected="selected">All Animals</option>
+    <option value="old">Older Animals</option>
+    <option value="young">Younger Animals</option>
+  </select>
+  <br><br>
+  <ul>
+    <li *ngFor="let currentAnimal of childAnimalList | animalAge:filterByAge">
+      <p>Species: {{currentAnimal.species}}</p>
+      <p>Name: {{currentAnimal.name}}</p>
+      <p>Age: {{currentAnimal.animalAge}}</p>
+      <p>Diet: {{currentAnimal.diet}}</p>
+      <p>Located: {{currentAnimal.location}}</p>
+      <p>Caretakers: {{currentAnimal.caretakers}}</p>
+      <p>Sex: {{currentAnimal.sex}}</p>
+      <p>Likes: {{currentAnimal.likes}}</p>
+      <p>Dislikes: {{currentAnimal.dislikes}}</p>
+      <p>Bio: {{currentAnimal.bio}}</p>
+      <p>Admitted: {{currentAnimal.admitted}}</p>
+      <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
+    </li>
   </ul>
 </div>
