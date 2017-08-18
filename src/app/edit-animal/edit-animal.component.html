@@ -4,18 +4,18 @@
   </p>
   <div *ngIf="childSelectedAnimal">
     <h1>Edit Animal details:</h1>
-    <label>Edit</label>
-    <input [(ngModel)]=childSelectedAnimal.species>
-    <input [(ngModel)]=childSelectedAnimal.name>
-    <input [(ngModel)]=childSelectedAnimal.age>
-    <input [(ngModel)]=childSelectedAnimal.diet>
-    <input [(ngModel)]=childSelectedAnimal.location>
-    <input [(ngModel)]=childSelectedAnimal.caretakers>
-    <input [(ngModel)]=childSelectedAnimal.sex>
-    <input [(ngModel)]=childSelectedAnimal.likes>
-    <input [(ngModel)]=childSelectedAnimal.dislikes>
-    <input [(ngModel)]=childSelectedAnimal.bio>
-    <input [(ngModel)]=childSelectedAnimal.admitted>
+    <label>Edit</label><br>
+    <input [(ngModel)]=childSelectedAnimal.species><br>
+    <input [(ngModel)]=childSelectedAnimal.name><br>
+    <input [(ngModel)]=childSelectedAnimal.age><br>
+    <input [(ngModel)]=childSelectedAnimal.diet><br>
+    <input [(ngModel)]=childSelectedAnimal.location><br>
+    <input [(ngModel)]=childSelectedAnimal.caretakers><br>
+    <input [(ngModel)]=childSelectedAnimal.sex><br>
+    <input [(ngModel)]=childSelectedAnimal.likes><br>
+    <input [(ngModel)]=childSelectedAnimal.dislikes><br>
+    <input [(ngModel)]=childSelectedAnimal.bio><br>
+    <input [(ngModel)]=childSelectedAnimal.admitted><br>
     <button (click)="doneButtonClicked()">Finished Editing</button>
   </div>
 </div>

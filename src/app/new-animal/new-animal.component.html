@@ -12,21 +12,21 @@
   <label>Age:</label>
   <input type="number" #newAge><br>
   <label>Diet:</label>
-  <input #newDiet>
+  <input #newDiet><br>
   <label>Location:</label>
-  <input #newLocation>
+  <input #newLocation><br>
   <label>Caretakers:</label>
-  <input type="number" #newCaretakers>
+  <input type="number" #newCaretakers><br>
   <label>Sex:</label>
-  <input #newSex>
+  <input #newSex><br>
   <label>Likes:</label>
-  <input #newLikes>
+  <input #newLikes><br>
   <label>Dislikes:</label>
-  <input #newDislikes>
+  <input #newDislikes><br>
   <label>Bio:</label>
-  <input #newBio>
+  <input type="textarea" #newBio><br>
   <label>Admitted:</label>
-  <input #newAdmitted>
+  <input #newAdmitted><br>
   <br><br>
   <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value, newBio.value, newAdmitted.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value=''; newBio.value=''; newAdmitted.value='';">Add New Animal</button>
 </div>
