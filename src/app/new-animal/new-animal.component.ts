@@ -21,7 +21,6 @@ export class NewAnimalComponent implements OnInit {
     this.addAnimal = true;
   }
 
-
   constructor() { }
 
   ngOnInit() {
