@@ -1,5 +1,51 @@
 # Zoo
 
+## Zoo Animal Tracker App, 08/18/2017
+
+## By Jacob Ruleaux
+
+## Description
+This app will allow user to enter new animals added to the zoo inventory, including basic info about the animal. The inventory is displayed. Animals maybe sorted by age. The animals maybe edited.
+
+## Planning
+
+1. Set-up new Angular project file "zoo".
+
+2. Specs
+
+  Spec 1:
+  * Input: User may enter "new animal" with details of species, name, age, diet, location, sex, likes/dislikes, number of caretakers.
+  * Output: The animal data entered will be displayed.
+
+  Spec 2:
+  * User will be able to sort Animal Inventory by age viewing only animals in the age range selected.
+
+  Spec 3:
+  * User will be able to click on individual animal and edit the details of the animal. Edited details will be displayed.
+
+3. Integration
+
+  * component.ts and base html file.
+  * new-animal-component folder for adding new inventory.
+  * edit-animal-component to edit inventory.
+  * animal-pipe component to sort animals by age.
+
+4. UX/UI
+
+  * Logical and easy to understand page lay-out. Usage should be easy to understand.
+
+5. Polish/Wishlist
+
+  * Clean-up indents and unnecessary code.
+  * Add professional styling and images.
+  * Add admittance property for each animal.
+  * Add display for total caretakers needed.
+
+## Installation
+  * In terminal "git clone https://github.com/jakeruleaux/zoo".
+* In terminal "cd zoo".
+* etc.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server
