@@ -29,6 +29,6 @@ export class AppComponent {
 
  addAnimal(newAnimalFromChild: Animal) {
    this.masterAnimalList.push(newAnimalFromChild);
-
  }
+
 }

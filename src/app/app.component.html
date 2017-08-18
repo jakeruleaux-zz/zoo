@@ -1,12 +1,18 @@
 <div class="container">
-
-  <h1>
-    {{title}}
-  </h1>
+  <nav class="navbar navbar-default" id="header">
+    <div class="navbar-header">
+      <div class="item1">
+        <h1 id="header">{{title}}</h1>
+      </div>
+    </div>
+    <!-- <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="about">About</a></li>
+    </ul> -->
+  </nav>
   <ul *ngFor="let currentAnimal of childAnimaList">
     <li></li>
   </ul>
-  <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)" ></animal-list>
+  <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
   <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
-   <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
+  <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
 </div>

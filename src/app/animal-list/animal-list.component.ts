@@ -18,9 +18,7 @@ export class AnimalListComponent implements OnInit {
 
   onChange(optionFromMenu) {
    this.filterByAge = optionFromMenu;
-   console.log(this.filterByAge);
- }
-  constructor() { }
+  }
 
   ngOnInit() {
   }
