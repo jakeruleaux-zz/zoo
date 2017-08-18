@@ -11,10 +11,10 @@ export class EditAnimalComponent implements OnInit {
   @Input() childSelectedAnimal: Animal;
   @Output() doneButtonClickedSender = new EventEmitter();
 
-  doneButtonClecked() {
+  doneButtonClicked() {
     this.doneButtonClickedSender.emit();
   }
-  
+
   constructor() { }
 
   ngOnInit() {
