@@ -15,4 +15,17 @@ export class AppComponent {
     new Animal('Unicorn', 'Cindy', 4, 'Children', 'Petting area', 4, 'Female', 'Running', 'TV', 'Dont ask', '04/04/2016')
 
   ];
+
+ //  editAnimal(clickedAnimal){
+ //   this.selectedAnimal = clickedAnimal;
+ // }
+
+ // finishedEditing(){
+ //   this.selectedAnimal = null;
+ // }
+
+ addAnimal(newAnimalFromChild: Animal) {
+   this.masterAnimalList.push(newAnimalFromChild);
+
+ }
 }

@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+
+  <h1>
+    {{title}}
+  </h1>
+  <ul *ngFor="let currentAnimal of childAnimaList">
+    <li></li>
+  </ul>
+  <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
+</div>
