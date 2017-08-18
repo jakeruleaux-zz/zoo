@@ -37,14 +37,14 @@ This app will allow user to enter new animals added to the zoo inventory, includ
 5. Polish/Wishlist
 
   * Clean-up indents and unnecessary code.
-  * Add professional styling and images.
+  * Add styling and images. Possibly slideshow.
   * Add admittance property for each animal.
   * Add display for total caretakers needed.
+  * Add links to contact, about, faqs components.
 
 ## Installation
   * In terminal "git clone https://github.com/jakeruleaux/zoo".
 * In terminal "cd zoo".
-* etc.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 

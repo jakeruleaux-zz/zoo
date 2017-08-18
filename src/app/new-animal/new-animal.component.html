@@ -1,30 +1,32 @@
 <div class="container">
   <button id="done" (click)="showAddForm()">Add new Animal</button>
-  <div *ngIf="addAnimal===true">
-  <h1>New Animal:</h1>
-  <label>Species:</label>
-  <input #newSpecies><br>
-  <label>Name:</label>
-  <input #newName><br>
-  <label>Age:</label>
-  <input type="number" #newAnimalAge><br>
-  <label>Diet:</label>
-  <input #newDiet><br>
-  <label>Location:</label>
-  <input #newLocation><br>
-  <label>Caretakers:</label>
-  <input type="number" #newCaretakers><br>
-  <label>Sex:</label>
-  <input #newSex><br>
-  <label>Likes:</label>
-  <input #newLikes><br>
-  <label>Dislikes:</label>
-  <input #newDislikes><br>
-  <label>Bio:</label>
-  <input type="textarea" #newBio><br>
-  <label>Admitted:</label>
-  <input #newAdmitted><br>
-  <br><br>
-  <button (click)="submitForm(newSpecies.value, newName.value, newAnimalAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value, newBio.value, newAdmitted.value); newSpecies.value=''; newName.value=''; newAnimalAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value=''; newBio.value=''; newAdmitted.value='';">Submit New Animal</button>
-</div>
+  <div *ngIf="addAnimal===true" class="new-animal">
+    <h1>New Animal:</h1>
+    <label>Species:</label>
+    <input #newSpecies><br>
+    <label>Name:</label>
+    <input #newName><br>
+    <label>Age:</label>
+    <input type="number" #newAnimalAge><br>
+    <label>Diet:</label>
+    <input #newDiet><br>
+    <label>Location:</label>
+    <input #newLocation><br>
+    <label>Caretakers:</label>
+    <input type="number" #newCaretakers><br>
+    <label>Sex:</label>
+    <input #newSex><br>
+    <label>Likes:</label>
+    <input #newLikes><br>
+    <label>Dislikes:</label>
+    <input #newDislikes><br>
+    <label>Bio:</label>
+    <input type="textarea" #newBio><br>
+    <label>Admitted:</label>
+    <input #newAdmitted><br>
+    <label>Pics: </label>
+    <input #newPhoto>
+    <br><br>
+    <button id="submit-btn"(click)="submitForm(newSpecies.value, newName.value, newAnimalAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value, newBio.value, newAdmitted.value, newPhoto.value); newSpecies.value=''; newName.value=''; newAnimalAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value=''; newBio.value=''; newAdmitted.value=''; newPhoto.value='';">Submit New Animal</button>
+  </div>
 </div>
