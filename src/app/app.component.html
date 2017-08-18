@@ -1,6 +1,6 @@
 <div class="container">
   <nav class="navbar navbar-default" id="header">
-    <div class="navbar-header">
+    <div class="navbar-header" >
       <div class="item1">
         <h1 id="header">{{title}}</h1>
         <!-- <li><a routerLink="about">About</a></li>
@@ -8,12 +8,12 @@
         <li><a routerLink="faqs">FAQS</a></li> -->
       </div>
     </div>
+    <p id="new"><new-animal (newAnimalSender)="addAnimal($event)"></new-animal></p>
   </nav>
   <ul *ngFor="let currentAnimal of childAnimaList">
     <li></li>
   </ul>
   <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
-  <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
   <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
 </div>
 <!-- <router-outlet></router-outlet> -->
