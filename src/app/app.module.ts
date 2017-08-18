@@ -5,12 +5,14 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NewAnimalComponent } from './new-animal/new-animal.component';
+import { AnimalListComponent } from './animal-list/animal-list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewAnimalComponent
+    NewAnimalComponent,
+    AnimalListComponent
   ],
   imports: [
     BrowserModule,

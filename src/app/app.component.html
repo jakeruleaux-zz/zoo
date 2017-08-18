@@ -6,5 +6,6 @@
   <ul *ngFor="let currentAnimal of childAnimaList">
     <li></li>
   </ul>
+  <animal-list [childAnimalList]="masterAnimalList"></animal-list>
   <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
 </div>

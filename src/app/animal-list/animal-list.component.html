@@ -1,0 +1,21 @@
+<div class="container">
+  <p>
+    animal-list works!
+  </p>
+  <h1>Current Animal List:</h1>
+<select (change)="onChange($event.target.value)">
+  <option value="allAnimals" selected="selected">All Animals</option>
+  <option value="old">Older Animal</option>
+  <option value="young">Younger Animal</option>
+</select>
+<br><br>
+
+  <!-- <ul class="list-unstyled" *ngFor="let currentAnimal of childAnimalList | animalAge:filterByAnimalAge"> -->
+      <!-- <li> -->
+        <!-- <div class="well" [id]="animalSpices(currentAnimal)"> -->
+        <!-- <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button> -->
+        <!-- </div> -->
+      <!-- </li>
+    </div>
+  </ul> -->
+</div>
