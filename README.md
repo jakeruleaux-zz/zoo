@@ -44,7 +44,9 @@ This app will allow user to enter new animals added to the zoo inventory, includ
 
 ## Installation
   * In terminal "git clone https://github.com/jakeruleaux/zoo".
-* In terminal "cd zoo".
+  * In terminal "cd zoo".
+  * In terminal "npm install".
+  * In terminal "bower install".
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
@@ -69,6 +71,19 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
 
+## Technologies Used
+
+* Angular 2
+* Bootstrap
+* Typescript
+* Javascript
+* HTML
+* CSS
+
+## Known Bugs
+
+* App does not 'save' user input if the browser is refreshed as there is no database connected to it.
+ 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
