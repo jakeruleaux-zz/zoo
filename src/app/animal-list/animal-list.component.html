@@ -6,22 +6,25 @@
     <option value="young">Younger Animals</option>
   </select>
   <br><br>
-  <ul>
-    <li *ngFor="let currentAnimal of childAnimalList | animalAge:filterByAge">
-      <p>Species: {{currentAnimal.species}}</p>
-      <p>Name: {{currentAnimal.name}}</p>
-      <p>Age: {{currentAnimal.animalAge}}</p>
-      <p>Diet: {{currentAnimal.diet}}</p>
-      <p>Located: {{currentAnimal.location}}</p>
-      <p>Caretakers: {{currentAnimal.caretakers}}</p>
-      <p>Sex: {{currentAnimal.sex}}</p>
-      <p>Likes: {{currentAnimal.likes}}</p>
-      <p>Dislikes: {{currentAnimal.dislikes}}</p>
-      <p>Bio: {{currentAnimal.bio}}</p>
-      <p>Admitted: {{currentAnimal.admitted}}</p>
+    <ul>
+      <li *ngFor="let currentAnimal of childAnimalList | animalAge:filterByAge">
+        <div class="well">
+          Species: {{currentAnimal.species}}<br>
+          Name: {{currentAnimal.name}}<br>
+          Age: {{currentAnimal.animalAge}}<br>
+          Diet: {{currentAnimal.diet}}<br>
+          Located: {{currentAnimal.location}}<br>
+          Caretakers: {{currentAnimal.caretakers}}<br>
+          Sex: {{currentAnimal.sex}}<br>
+          Likes: {{currentAnimal.likes}}<br>
+          Dislikes: {{currentAnimal.dislikes}}<br>
+          Bio: {{currentAnimal.bio}}<br>
+          Admitted: {{currentAnimal.admitted}}<br>
+
       <!-- The photos need to be lined differently -->
       <!-- <p>Pic: {{currentAnimal.photo}}</p> -->
       <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
-    </li>
-  </ul>
+      </div>
+      </li>
+    </ul>
 </div>
